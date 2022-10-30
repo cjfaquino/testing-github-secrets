@@ -12,7 +12,8 @@ module.exports = merge(common, {
     liveReload: true,
     open: true,
     client: {
-      reconnect: 5,
+      logging: 'warn',
+      reconnect: 2,
     },
   },
   plugins: [
