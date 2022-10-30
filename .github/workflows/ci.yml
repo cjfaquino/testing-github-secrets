@@ -32,14 +32,14 @@ jobs:
         run: |
           npm install
           npm run build
+        env:
+          TEST: ${{ secrets.TEST }}
 
       - name: Deploy to GH Page
         uses: JamesIves/github-pages-deploy-action@v4.4.0
         with:
           branch: gh-pages
           folder: dist
-        env:
-          TEST: ${{ secrets.TEST }}
 
       - name: Test
         run: |
