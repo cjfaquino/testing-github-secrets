@@ -11,6 +11,7 @@ permissions:
 
 env:
   CANDY_SECURE: ${{ secrets.CANY_APPLE_SECURE }}
+  TEST: ${{ secrets.TEST }}
 
 jobs:
   build:
@@ -32,8 +33,6 @@ jobs:
         run: |
           npm install
           npm run build
-        env:
-          TEST: ${{ secrets.TEST }}
 
       - name: Deploy to GH Page
         uses: JamesIves/github-pages-deploy-action@v4.4.0

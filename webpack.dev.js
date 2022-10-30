@@ -20,4 +20,12 @@ module.exports = merge(common, {
       'process.env.TEST': '1234',
     }),
   ],
+  module: {
+    rules: [
+      {
+        test: /\.css$/i,
+        use: ['style-loader', 'css-loader'],
+      },
+    ],
+  },
 });
