@@ -1,0 +1,35 @@
+{
+  "name": "testing-github-secrets",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/index.js",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode=production",
+    "dev": "webpack serve --mode=development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cjfaquino/testing-github-secrets.git"
+  },
+  "keywords": [],
+  "author": "Christian Aquino",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cjfaquino/testing-github-secrets/issues"
+  },
+  "homepage": "https://github.com/cjfaquino/testing-github-secrets#readme",
+  "devDependencies": {
+    "dotenv-webpack": "^8.0.1",
+    "eslint": "^8.26.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.26.0",
+    "html-webpack-plugin": "^5.5.0",
+    "prettier": "^2.7.1",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.11.1"
+  }
+}
